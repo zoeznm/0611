@@ -7,30 +7,17 @@
 </head>
 <body>
   <div id="root"></div>
+  <script src="names.js"></script>
+  <script src="tagComponent.js"></script>
+  <script src="app.js"></script>
+  <script src="render.js"></script>
   <script>
     const root = document.getElementById('root');
-
-
-    const tagComponent = (tagName, textNode) => {
-      return `<${tagName}>${textNode}</${tagName}>`;
-    };
-
-    const app = () => {
-      return `
-      ${tagComponent("h1","공욱재입니다")}
-      ${tagComponent("h2","최유진입니다")}
-      ${tagComponent("h3","유호영입니다")}
-      `;
-    }
-    console.log(app());
-
-    const render = () => {
-      root.innerHTML = app();
-    }
 
     render();
 
 
   </script>
 </body>
+</html>
 </html>
